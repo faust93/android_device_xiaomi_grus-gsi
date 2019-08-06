@@ -1,0 +1,4 @@
+#============= vendor_init ==============
+allow vendor_init default_prop:property_service set;
+allow vendor_init rootfs:dir { add_name write };
+allow vendor_init system_data_file:dir { read setattr };

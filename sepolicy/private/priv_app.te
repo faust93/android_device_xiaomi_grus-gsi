@@ -1,0 +1,6 @@
+#============= priv_app ==============
+allow priv_app bt_firmware_file:filesystem getattr;
+allow priv_app firmware_file:filesystem getattr;
+allow priv_app proc:file open;
+allow priv_app proc_modules:file { getattr open };
+allow priv_app sysfs:dir open;

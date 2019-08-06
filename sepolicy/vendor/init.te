@@ -1,0 +1,5 @@
+#============= init ==============
+allow init rootfs:file setattr;
+allow init sysfs_devices_block:file { open write };
+allow init vendor_hal_file:file mounton;
+allow init vndbinder_device:chr_file ioctl;

@@ -1,0 +1,2 @@
+allow bluetooth vendor_file:file { open read };
+allow bluetooth vendor_file:file { r_file_perms execute };
